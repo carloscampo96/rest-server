@@ -36,11 +36,11 @@
         function handleCredentialResponse(response) {
             
             const body = { id_token: response.credential };
-            // const url = process.env.ENVIROMENT === 'develop' ? 
-            //             'http://localhost:8080/api/auth/google' 
-            //             : 'https://rest-server-production-4098.up.railway.app';
+            const url = process.env.ENVIROMENT === 'develop' ? 
+                        'http://localhost:8080/api/auth/google' 
+                        : 'https://rest-server-production-4098.up.railway.app/api/auth/google';
 
-            const url = 'https://rest-server-production-4098.up.railway.app'
+            //const url = 'https://rest-server-production-4098.up.railway.app'
 
             fetch( url, {
                     method: 'POST',
