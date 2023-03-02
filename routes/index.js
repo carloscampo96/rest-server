@@ -1,0 +1,5 @@
+export { routerUser } from './usuarios.js'
+export { routerCategories } from './categorias.js'
+export { routerAuth } from './auth.js'
+export { routerProducto } from './productos.js'
+export { routerBusqueda } from './buscar.js'
